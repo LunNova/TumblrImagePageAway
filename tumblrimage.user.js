@@ -14,7 +14,7 @@
 // @version         1.0
 // @updateURL		https://raw.githubusercontent.com/nallar/TumblrImagePageAway/master/tumblrimage.user.js
 //
-// @run-at			document-start|document-end
+// @run-at			document-end
 // @unwrap
 // ==/UserScript==
 
@@ -39,7 +39,7 @@
  * @see http://wiki.greasespot.net/API_reference
  * @see http://wiki.greasespot.net/Metadata_Block
  */
-(function() {	
+(function() {
 	var imgHolder = document.getElementById("content-image");
   var target = imgHolder.getAttribute("data-src");
   if (target) {
